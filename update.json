@@ -1,15 +1,15 @@
 {
   "_说明": "应用内更新的版本清单。App 端地址写死在 BuildConfig.UPDATE_MANIFEST_URL（构建期常量），当前指向 https://suixinji-51184.app.workbuddy.host/update.json 。versions 数组里可以同时挂多个版本，客户端只挑 versionCode 最大且高于本机的那一条，所以旧版本会直接跳到最新版，不用一级级更新。",
-  "versionName": "1.13",
-  "versionCode": 113,
-  "sizeBytes": 1485038,
-  "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.13.apk",
+  "versionName": "1.14",
+  "versionCode": 114,
+  "sizeBytes": 1464166,
+  "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.14.apk",
   "changelog": [
-    "打开 / 关闭清单加过渡动画：二级页从右侧推入、一级页轻微左移退后（视差），返回时反向，不再硬切",
-    "更新源迁移至 GitHub Pages：地址固定为 https://shangqiu666.github.io/suixinji/ ，不再每次发布换域名"
+    "修复长单词被拆行：communication 这类长词和长音标按字符数自适应字号并强制单行，放不下时末尾截断，不再折成多行/竖排",
+    "「我的」页改版：换新头像；去掉作者与 QQ 信息，头像旁只留应用名；底部版本行去掉题库统计，只留碎心记 v版本号"
   ],
   "force": false,
-  "sha256": "d44f8f48c7c47fd70c07f7535b21a8afbbe1211199e84c57c2103beccd8e5833",
+  "sha256": "a4de0fa5d29ad3b76921556b2b48ec6716bf42c2fbed16bcb2d1cb7b3f77cd7b",
   "versions": [
     {
       "versionName": "1.04",
@@ -141,6 +141,18 @@
       ],
       "force": false,
       "sha256": "d44f8f48c7c47fd70c07f7535b21a8afbbe1211199e84c57c2103beccd8e5833"
+    },
+    {
+      "versionName": "1.14",
+      "versionCode": 114,
+      "sizeBytes": 1464166,
+      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.14.apk",
+      "changelog": [
+        "修复长单词被拆行：communication 这类长词和长音标按字符数自适应字号并强制单行，放不下时末尾截断，不再折成多行/竖排",
+        "「我的」页改版：换新头像；去掉作者与 QQ 信息，头像旁只留应用名；底部版本行去掉题库统计，只留碎心记 v版本号"
+      ],
+      "force": false,
+      "sha256": "a4de0fa5d29ad3b76921556b2b48ec6716bf42c2fbed16bcb2d1cb7b3f77cd7b"
     }
   ]
 }
