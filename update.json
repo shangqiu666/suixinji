@@ -1,0 +1,134 @@
+{
+  "_说明": "应用内更新的版本清单。App 端地址写死在 BuildConfig.UPDATE_MANIFEST_URL（构建期常量），当前指向 https://suixinji-51184.app.workbuddy.host/update.json 。versions 数组里可以同时挂多个版本，客户端只挑 versionCode 最大且高于本机的那一条，所以旧版本会直接跳到最新版，不用一级级更新。",
+  "versionName": "1.12",
+  "versionCode": 112,
+  "sizeBytes": 1485038,
+  "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.12.apk",
+  "changelog": [
+    "修复 AI 查词遇到俚语 / 粗俗词（dick、fuck 等）时三条通道全部报错：提示词改为按正规词典口径中性释义（覆盖俚语、粗俗语、禁忌语，标注语域），输出上限从 400 提到 900 避免长释义被截断，并在输出被内容策略拦腰掐断时从容错解析里抢救出已生成的词条与释义",
+    "AI 释义拿不到但词典 / 词库已给出结果时，不再铺满红色错误卡挡住释义，改为一行低调提示（仍可点「重试」）"
+  ],
+  "force": false,
+  "sha256": "325da3ba173b0ab1740fdea7eeb9b286e5af18644cd0a8d634fe941523b3799a",
+  "versions": [
+    {
+      "versionName": "1.04",
+      "versionCode": 104,
+      "sizeBytes": 1452270,
+      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.04.apk",
+      "changelog": [
+        "新增 AI 查词：顶部搜索直连 DeepSeek，给出中文释义与翻译，输入中文也能反查英文对应词",
+        "新增「单词拼写」：词库页新入口（按分类浏览与最近练习之间），看中文释义补全挖空单词，缺口为下划线，点「显示答案」用红字补全，拼对后可点右下角「下一词」，拼错会提示",
+        "修复语音播放没声音：Android 11+ 的软件包可见性限制导致语音引擎探测失败，已补上 TTS 查询声明与音频流属性",
+        "搜索框整体下移一行、字号降一档，占位文字保证单行完整显示",
+        "若干交互与稳定性修复"
+      ],
+      "force": false,
+      "sha256": "00e8c5b0ec3cc1b7f38cd681d478a529debfa49ba9f2be4bb1170edaef439478"
+    },
+    {
+      "versionName": "1.05",
+      "versionCode": 105,
+      "sizeBytes": 1468654,
+      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.05.apk",
+      "changelog": [
+        "新增 AI 查词：顶部搜索直连 DeepSeek，单词、中文都能查，释义/音标/例句一站出",
+        "新增「单词拼写」练习：看中文释义补全挖空单词，「显示答案」红字补全，拼对才能下一词",
+        "修复语音朗读没声音：TTS 引擎自动探测与重试，本地语音失败时自动转在线发音兜底",
+        "远程更新支持多版本清单：旧版本检测到新版直接升到最新（如 1.03 直升 1.05）",
+        "AI 请求失败自动重试，超时与限流有明确中文提示"
+      ],
+      "force": false,
+      "sha256": "cd955d185c97de4f6a5a6bb0e865ff9aeae399fc1ba3bf9bb836d362e66eb147"
+    },
+    {
+      "versionName": "1.06",
+      "versionCode": 106,
+      "sizeBytes": 1468654,
+      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.06.apk",
+      "changelog": [
+        "「还不熟」支持加入自建清单：点按钮后弹出下拉，按你创建的清单选择，单词一并收进去",
+        "AI 查词增加第二通道：主通道（DeepSeek）失败时自动切换 zayuapi（gpt-5.6），两条都挂才报错",
+        "AI 失败提示区分通道原因，不再只显示一句「请求失败」"
+      ],
+      "force": false,
+      "sha256": "2252b7b34b0ce0bcc91f5de56616afc7267e0c95307c00da07ab040392afc6f5"
+    },
+    {
+      "versionName": "1.07",
+      "versionCode": 107,
+      "sizeBytes": 1468654,
+      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.07.apk",
+      "changelog": [
+        "AI 查词双通道并行竞赛：主备两条通道同时请求，谁快用谁，坏通道不再拖住整次查询",
+        "AI 查询超时从 75s 收紧到 45s，单通道最坏等待时间缩短约一半",
+        "AI 失败提示带上具体通道域名，两条都挂时能看出是谁的问题",
+        "「还不熟」改为按钮上直接展开下拉选清单，选中即完成归类并自动跳到下一词，不再弹窗打断练习"
+      ],
+      "force": false,
+      "sha256": "14e0a49d501b2f2400bb1024c5b1c8aa23705d6df3bf328ff299f95033746636"
+    },
+    {
+      "versionName": "1.08",
+      "versionCode": 108,
+      "sizeBytes": 1468654,
+      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.08.apk",
+      "changelog": [
+        "AI 查词提速：提示词精简、输出上限减半、连接超时 6s / 读取超时 12s，服务端异常时秒级反馈不再干等",
+        "「还不熟」清单改为粘滞目标：下拉里选中一次后长期生效，之后点「还不熟」一步归进该清单；pill 直接显示当前目标名，倒三角随时可换",
+        "清单下拉框适配整体 UI：深色卡片底色、细描边、14dp 圆角，当前目标带对勾高亮"
+      ],
+      "force": false,
+      "sha256": "02602776b91d929c2108d595e49fa5278a297857de9a3d4746c754dac327cecf"
+    },
+    {
+      "versionName": "1.09",
+      "versionCode": 109,
+      "sizeBytes": 1468654,
+      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.09.apk",
+      "changelog": [
+        "修复发音误报「系统语音引擎不可用」：初始化偶发失败改为退避重试，不再一锤定音；用户再次点击会自动给引擎重试机会，排队过久自动转在线发音",
+        "「还不熟」清单倒三角融入同一个按钮框：图标 + 目标名 + 尾部倒三角成一个整体，点框体一步标记，点倒三角展开下拉",
+        "清单页新增删除清单：自建清单行右侧垃圾桶，删除前弹确认，词只脱离清单、练习记录不受影响（内置「还不熟」不可删）"
+      ],
+      "force": false,
+      "sha256": "dc3051fc38f6669fb3f067c23b2d0ab05993c10e2721ad827412768e6d0f589f"
+    },
+    {
+      "versionName": "1.10",
+      "versionCode": 110,
+      "sizeBytes": 1468654,
+      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.10.apk",
+      "changelog": [
+        "AI 查词新增第三通道：fluxa（New API 网关，gpt-4o）。三条通道并行竞赛，先成功的赢，其余立即取消；实测该网关密钥有效但分组下模型暂不可用（503/挂起），等上游恢复即可用",
+        "AI 查询失败提示改为列出各通道域名与具体原因，并标注共尝试了几条通道"
+      ],
+      "force": false,
+      "sha256": "eff75f05ddbda88fc4be6b115ad28d8fcfe1466084fef1bfe7db476dca21c014"
+    },
+    {
+      "versionName": "1.11",
+      "versionCode": 111,
+      "sizeBytes": 1485038,
+      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.11.apk",
+      "changelog": [
+        "修复练习一轮内单词频繁重复：标记「还不熟」不再把词插回本轮洗牌队列，弱词记忆由持久化清单承担；新一轮洗牌后自动避开上一轮最后发过的词",
+        "修复发音串台：未就绪时排队只保留最后点的词（旧版会把连点的旧词按顺序全播一遍，听到的是以前按的单词的读音）；发声前显式停止上一个读音，朗读回调按发音任务 ID 精确定位词"
+      ],
+      "force": false,
+      "sha256": "f9a4ba8cff6f540b5fb32ec56d6cba1f5555ac77e5873967697690a27fd2c0f6"
+    },
+    {
+      "versionName": "1.12",
+      "versionCode": 112,
+      "sizeBytes": 1485038,
+      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.12.apk",
+      "changelog": [
+        "修复 AI 查词遇到俚语 / 粗俗词（dick、fuck 等）时三条通道全部报错：提示词改为按正规词典口径中性释义（覆盖俚语、粗俗语、禁忌语，标注语域），输出上限从 400 提到 900 避免长释义被截断，并在输出被内容策略拦腰掐断时从容错解析里抢救出已生成的词条与释义",
+        "AI 释义拿不到但词典 / 词库已给出结果时，不再铺满红色错误卡挡住释义，改为一行低调提示（仍可点「重试」）"
+      ],
+      "force": false,
+      "sha256": "325da3ba173b0ab1740fdea7eeb9b286e5af18644cd0a8d634fe941523b3799a"
+    }
+  ]
+}
