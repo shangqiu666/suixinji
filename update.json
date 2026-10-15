@@ -1,15 +1,15 @@
 {
   "_说明": "应用内更新的版本清单。App 端地址写死在 BuildConfig.UPDATE_MANIFEST_URL（构建期常量），当前指向 https://suixinji-51184.app.workbuddy.host/update.json 。versions 数组里可以同时挂多个版本，客户端只挑 versionCode 最大且高于本机的那一条，所以旧版本会直接跳到最新版，不用一级级更新。",
-  "versionName": "1.12",
-  "versionCode": 112,
+  "versionName": "1.13",
+  "versionCode": 113,
   "sizeBytes": 1485038,
-  "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.12.apk",
+  "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.13.apk",
   "changelog": [
-    "修复 AI 查词遇到俚语 / 粗俗词（dick、fuck 等）时三条通道全部报错：提示词改为按正规词典口径中性释义（覆盖俚语、粗俗语、禁忌语，标注语域），输出上限从 400 提到 900 避免长释义被截断，并在输出被内容策略拦腰掐断时从容错解析里抢救出已生成的词条与释义",
-    "AI 释义拿不到但词典 / 词库已给出结果时，不再铺满红色错误卡挡住释义，改为一行低调提示（仍可点「重试」）"
+    "打开 / 关闭清单加过渡动画：二级页从右侧推入、一级页轻微左移退后（视差），返回时反向，不再硬切",
+    "更新源迁移至 GitHub Pages：地址固定为 https://shangqiu666.github.io/suixinji/ ，不再每次发布换域名"
   ],
   "force": false,
-  "sha256": "2d45e940c993d4bda423160af402554c5c86e14c06339b67ecf54cc1e364e730",
+  "sha256": "d44f8f48c7c47fd70c07f7535b21a8afbbe1211199e84c57c2103beccd8e5833",
   "versions": [
     {
       "versionName": "1.04",
@@ -129,6 +129,18 @@
       ],
       "force": false,
       "sha256": "2d45e940c993d4bda423160af402554c5c86e14c06339b67ecf54cc1e364e730"
+    },
+    {
+      "versionName": "1.13",
+      "versionCode": 113,
+      "sizeBytes": 1485038,
+      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.13.apk",
+      "changelog": [
+        "打开 / 关闭清单加过渡动画：二级页从右侧推入、一级页轻微左移退后（视差），返回时反向，不再硬切",
+        "更新源迁移至 GitHub Pages：地址固定为 https://shangqiu666.github.io/suixinji/ ，不再每次发布换域名"
+      ],
+      "force": false,
+      "sha256": "d44f8f48c7c47fd70c07f7535b21a8afbbe1211199e84c57c2103beccd8e5833"
     }
   ]
 }
