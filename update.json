@@ -9,13 +9,13 @@
     "AI 释义拿不到但词典 / 词库已给出结果时，不再铺满红色错误卡挡住释义，改为一行低调提示（仍可点「重试」）"
   ],
   "force": false,
-  "sha256": "325da3ba173b0ab1740fdea7eeb9b286e5af18644cd0a8d634fe941523b3799a",
+  "sha256": "2d45e940c993d4bda423160af402554c5c86e14c06339b67ecf54cc1e364e730",
   "versions": [
     {
       "versionName": "1.04",
       "versionCode": 104,
       "sizeBytes": 1452270,
-      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.04.apk",
+      "apkUrl": "https://suixinji-51184.app.workbuddy.host/suixinji-v1.04.apk",
       "changelog": [
         "新增 AI 查词：顶部搜索直连 DeepSeek，给出中文释义与翻译，输入中文也能反查英文对应词",
         "新增「单词拼写」：词库页新入口（按分类浏览与最近练习之间），看中文释义补全挖空单词，缺口为下划线，点「显示答案」用红字补全，拼对后可点右下角「下一词」，拼错会提示",
@@ -30,7 +30,7 @@
       "versionName": "1.05",
       "versionCode": 105,
       "sizeBytes": 1468654,
-      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.05.apk",
+      "apkUrl": "https://suixinji-51184.app.workbuddy.host/suixinji-v1.05.apk",
       "changelog": [
         "新增 AI 查词：顶部搜索直连 DeepSeek，单词、中文都能查，释义/音标/例句一站出",
         "新增「单词拼写」练习：看中文释义补全挖空单词，「显示答案」红字补全，拼对才能下一词",
@@ -45,7 +45,7 @@
       "versionName": "1.06",
       "versionCode": 106,
       "sizeBytes": 1468654,
-      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.06.apk",
+      "apkUrl": "https://suixinji-51184.app.workbuddy.host/suixinji-v1.06.apk",
       "changelog": [
         "「还不熟」支持加入自建清单：点按钮后弹出下拉，按你创建的清单选择，单词一并收进去",
         "AI 查词增加第二通道：主通道（DeepSeek）失败时自动切换 zayuapi（gpt-5.6），两条都挂才报错",
@@ -58,7 +58,7 @@
       "versionName": "1.07",
       "versionCode": 107,
       "sizeBytes": 1468654,
-      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.07.apk",
+      "apkUrl": "https://suixinji-51184.app.workbuddy.host/suixinji-v1.07.apk",
       "changelog": [
         "AI 查词双通道并行竞赛：主备两条通道同时请求，谁快用谁，坏通道不再拖住整次查询",
         "AI 查询超时从 75s 收紧到 45s，单通道最坏等待时间缩短约一半",
@@ -72,7 +72,7 @@
       "versionName": "1.08",
       "versionCode": 108,
       "sizeBytes": 1468654,
-      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.08.apk",
+      "apkUrl": "https://suixinji-51184.app.workbuddy.host/suixinji-v1.08.apk",
       "changelog": [
         "AI 查词提速：提示词精简、输出上限减半、连接超时 6s / 读取超时 12s，服务端异常时秒级反馈不再干等",
         "「还不熟」清单改为粘滞目标：下拉里选中一次后长期生效，之后点「还不熟」一步归进该清单；pill 直接显示当前目标名，倒三角随时可换",
@@ -85,7 +85,7 @@
       "versionName": "1.09",
       "versionCode": 109,
       "sizeBytes": 1468654,
-      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.09.apk",
+      "apkUrl": "https://suixinji-51184.app.workbuddy.host/suixinji-v1.09.apk",
       "changelog": [
         "修复发音误报「系统语音引擎不可用」：初始化偶发失败改为退避重试，不再一锤定音；用户再次点击会自动给引擎重试机会，排队过久自动转在线发音",
         "「还不熟」清单倒三角融入同一个按钮框：图标 + 目标名 + 尾部倒三角成一个整体，点框体一步标记，点倒三角展开下拉",
@@ -98,7 +98,7 @@
       "versionName": "1.10",
       "versionCode": 110,
       "sizeBytes": 1468654,
-      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.10.apk",
+      "apkUrl": "https://suixinji-51184.app.workbuddy.host/suixinji-v1.10.apk",
       "changelog": [
         "AI 查词新增第三通道：fluxa（New API 网关，gpt-4o）。三条通道并行竞赛，先成功的赢，其余立即取消；实测该网关密钥有效但分组下模型暂不可用（503/挂起），等上游恢复即可用",
         "AI 查询失败提示改为列出各通道域名与具体原因，并标注共尝试了几条通道"
@@ -110,7 +110,7 @@
       "versionName": "1.11",
       "versionCode": 111,
       "sizeBytes": 1485038,
-      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.11.apk",
+      "apkUrl": "https://suixinji-51184.app.workbuddy.host/suixinji-v1.11.apk",
       "changelog": [
         "修复练习一轮内单词频繁重复：标记「还不熟」不再把词插回本轮洗牌队列，弱词记忆由持久化清单承担；新一轮洗牌后自动避开上一轮最后发过的词",
         "修复发音串台：未就绪时排队只保留最后点的词（旧版会把连点的旧词按顺序全播一遍，听到的是以前按的单词的读音）；发声前显式停止上一个读音，朗读回调按发音任务 ID 精确定位词"
@@ -128,7 +128,7 @@
         "AI 释义拿不到但词典 / 词库已给出结果时，不再铺满红色错误卡挡住释义，改为一行低调提示（仍可点「重试」）"
       ],
       "force": false,
-      "sha256": "325da3ba173b0ab1740fdea7eeb9b286e5af18644cd0a8d634fe941523b3799a"
+      "sha256": "2d45e940c993d4bda423160af402554c5c86e14c06339b67ecf54cc1e364e730"
     }
   ]
 }
