@@ -1,15 +1,16 @@
 {
   "_说明": "应用内更新的版本清单。App 端地址写死在 BuildConfig.UPDATE_MANIFEST_URL（构建期常量），当前指向 https://suixinji-51184.app.workbuddy.host/update.json 。versions 数组里可以同时挂多个版本，客户端只挑 versionCode 最大且高于本机的那一条，所以旧版本会直接跳到最新版，不用一级级更新。",
-  "versionName": "1.14",
-  "versionCode": 114,
+  "versionName": "1.15",
+  "versionCode": 115,
   "sizeBytes": 1464166,
-  "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.14.apk",
+  "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.15.apk",
   "changelog": [
-    "修复长单词被拆行：communication 这类长词和长音标按字符数自适应字号并强制单行，放不下时末尾截断，不再折成多行/竖排",
-    "「我的」页改版：换新头像；去掉作者与 QQ 信息，头像旁只留应用名；底部版本行去掉题库统计，只留碎心记 v版本号"
+    "底部任务栏改悬浮胶囊样式：左右留边距 + 22dp 圆角 + 细描边，不再是贴边直角横条",
+    "修复小米 15（及部分小米机型）语音没声音：引擎在但没装英语语音包时，speak 会被静默吞掉且不报错，现在直接转在线发音",
+    "新增静默吞词检测：系统语音接受朗读却 2 秒内没开始播，自动切换在线发音兜底"
   ],
   "force": false,
-  "sha256": "a4de0fa5d29ad3b76921556b2b48ec6716bf42c2fbed16bcb2d1cb7b3f77cd7b",
+  "sha256": "fd222c8247130d4a43d01abbbc6e7dd44553fbd60f8a4492ce86e63f36a62fb6",
   "versions": [
     {
       "versionName": "1.04",
@@ -153,6 +154,19 @@
       ],
       "force": false,
       "sha256": "a4de0fa5d29ad3b76921556b2b48ec6716bf42c2fbed16bcb2d1cb7b3f77cd7b"
+    },
+    {
+      "versionName": "1.15",
+      "versionCode": 115,
+      "sizeBytes": 1464166,
+      "apkUrl": "https://shangqiu666.github.io/suixinji/suixinji-v1.15.apk",
+      "changelog": [
+        "底部任务栏改悬浮胶囊样式：左右留边距 + 22dp 圆角 + 细描边，不再是贴边直角横条",
+        "修复小米 15（及部分小米机型）语音没声音：引擎在但没装英语语音包时，speak 会被静默吞掉且不报错，现在直接转在线发音",
+        "新增静默吞词检测：系统语音接受朗读却 2 秒内没开始播，自动切换在线发音兜底"
+      ],
+      "force": false,
+      "sha256": "fd222c8247130d4a43d01abbbc6e7dd44553fbd60f8a4492ce86e63f36a62fb6"
     }
   ]
 }
